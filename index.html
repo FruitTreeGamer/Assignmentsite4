@@ -228,14 +228,14 @@
     <!--This adds conetnt to the heder class-->
 
     <div class="header">
-        <h1>Assignment 1</Header>
+        <h1><var>How I Made This Site</var></Header>
         </h1>
     </div>
 
     <div class="topnav">
         <nav></nav>
         <a class="active" href="#home">Home</a>
-        <a href="#Code">Code</a>
+        <a href="#news">News</a>
         <a href="Assign1Page2.html" style="float:right">Lets go to page 2</a>
         <div class="dropdown">
             <button class="dropbtn">More
@@ -255,14 +255,24 @@
                 <h2>This is a left column</h2>
                 <h3>made using divs</h3>
                 <div class="image">
-                    <img src="" alr="Failed to display image" style="height: 200px;">
+                    <img src="responsive.PNG" alr="Failed to display image" style="height: 200px;">
                 </div>
-                <p>Display Content Here</p>
+                <p><var>Responsive Layouts</var></p>
+                <p>What are responsive layouts? They are used to respond to the size of the website, so if i was to
+                    shrink the size of my website the columns dont go all over the place instead they stack. <var>Try
+                        it</var>. </p>
+                <p>In my example the responsive layout will start to happen when the webpage is lower than 800px. The
+                    width is set to make sure my columns still take up the page rather than staying the same size and
+                    being too big.</p>
             </div>
 
             <!--adds conent to middle column-->
             <div class="card">
-                <h2> Display Content here</h2>
+                <h2> Code Snippets</h2>
+                <li>overflow:hidden is added to the ul element to prevent li elements from going outside of the list.The overflow is clipped the rest of the content will be invisible.</li>
+                <li>src- makes sure of the address of the external file to add to the page</li>
+                <li>Var- This is used to declare a variable i can call for it at any time in this case mine <var>changes the size of the text</var> </li>
+    
             </div>
         </div>
 
@@ -271,39 +281,43 @@
             <div class="card">
                 <h3>This is The right column</h3>
                 <div class="image">
-                    <img src="card.PNG"  alt="Failed to display image">
+                    <img src="card.PNG" alt="Failed to display image">
                 </div>
                 <var>
                     <p>What i used .card for</p>
                 </var>
-                <p>Display Conent Here</p>
+                <p><b>.card</b> gives the website the effect of a card for the background of each column. To
+                    implement this into this column i simply put the card class inside the columnright class.</p>
             </div>
 
 
             <!--If the images are clicked on it opens a new tab displaying them, alt is a failsafe for if the image doesnt show for whatever reason-->
             <div class="card">
-                <h3><var>card</var></h3>
+                <h3><var>Click to Enlarge</var></h3>
                 <div class="image">
-                    <a target="_blank" href="">
-                        <img src="" style="height: 15%; " alt="Failed to display image">
+                    <a target="_blank" href="Capture.PNG">
+                        <img src="Capture.PNG" style="height: 15%; " alt="Failed to display image">
                     </a>
                 </div><br>
                 <!--<a> is used as a hyperlink to link to the image -->
                 <div class="image">
-                    <a target="_blank" href="">
-                        <img src="" style="height: 15%;" alt="Failed to display image">
+                    <a target="_blank" href="ImageClick2.PNG">
+                        <img src="ImageClick2.PNG" style="height: 15%;" alt="Failed to display image">
                     </a>
                 </div>
             </div>
             <div class="card">
-                <h3>Display Conent Here</h3> 
+                <h3>Did you like this page</h3>
+                <p>.row after is used to clear the floats it is crucial for the site.</p>
+                <p>The animation was set using <var>@keyframes</var> this is used to specify the animation code, it sets
+                    what the animation will be doing. </p>
             </div>
         </div>
     </div>
 
 
     <div class="footer">
-        <p>This is my footer </p>
+        <p>This is my footer</p>
     </div>
 
 

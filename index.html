@@ -170,6 +170,19 @@
             font-size: 20px;
         }
 
+        tr{
+            width: 100px;
+            height: 50px;
+            background: turquoise;
+            transition: width 2s;
+
+        }
+
+        #tr1 {transition-timing-function: linear;}
+
+        tr:hover{
+            width: 300px;
+        }
 
         /* Keyframes specifies the animation code, here it sets what the animation will be doing*/
         @keyframes example {
@@ -231,6 +244,7 @@
     <div class="header">
         <h1>Assignment 1</Header>
         </h1>
+        <div id="tr">linear</div><br>
     </div>
 
     <div class="topnav">

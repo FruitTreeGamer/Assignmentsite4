@@ -12,57 +12,6 @@
             background: #f1f1f1;
         }
 
-        form {
-            border: 3px solid #f1f1f1;
-        }
-
-        input[type=text],
-        input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #04AA6D;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-        }
-
-        .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-        }
-
-        img.avatar {
-            width: 40%;
-            border-radius: 50%;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-
-
-
         .header {
             background-color: white;
             padding: 10px;
@@ -317,18 +266,6 @@
                 width: 100%;
             }
         }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-
-            .cancelbtn {
-                width: 100%;
-            }
-        }
     </style>
 </head>
 
@@ -341,8 +278,7 @@
                 <a href="/" style="position: absolute;width: 100%;display: block;min-height: 158px;"></a>
                 <p>
                     <div class="image">
-                        <img class="img-responsive" src="logo.png" style="vertical-align: middle;"
-                            alt="Failed to display image">
+                        <img class="img-responsive" src="logo.png" style="vertical-align: middle;" alt="Failed to display image">
                     </div>
                 </p>
 
@@ -351,8 +287,8 @@
     </header>
     <div class="topnav">
         <nav></nav>
-        <a  href="index.html">Home</a>
-        <a href="class.html">Classes</a>
+        <a href="index.html">Home</a>
+        <a class ="active" href="class.html">Classes</a>
         <a href="Assign4P2.html">Contact Us</a>
         <div class="dropdown">
             <button class="dropbtn">About
@@ -360,42 +296,14 @@
             </button>
             <div class="dropdown-content">
                 <a href="#about">What is Tae Kwon Do</a>
-                <a href="#classes">Tae kwon Do for adults and kids</a>
+                <a  href="#classes">Tae kwon Do for adults and kids</a>
                 <a href="#SelfDefence">Tae kwon do as self defense</a>
             </div>
         </div>
-        <a  href="#Login" style="float:right; color:red;">Login/Sign Up</a>
+        <a href="LoginPage.html" style ="float:right;color:red;">Login/Sign Up</a>
     </div>
 
-    <h2>Sign Up Form</h2>
-
-    <form action="/action_page.php" method="post">
-    <div class="imgcontainer">
-        <img src="My_Flying_Kick_1987_On_Black_Background[1].jpg" alt="image not loaded" >
-    </div>
-
-    <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-
-        <label for="ename"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="ename" required>
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-            
-        <button type="submit">Sign Up</button>
-        <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn"><a href = "index.html"> Cancel</a></button>
-        <span class="psw"> Or<a href="LoginPage.html"> Log In</a></span>
-    </div>
-    </form>
-
+   
 
     <div class="footer">
         <p>This is a footer</p>

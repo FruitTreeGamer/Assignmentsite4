@@ -355,24 +355,24 @@
         </div>
         <div class="row">
             <div class="column">
-                <img src="main_image[1].png" style="width:100%">
+                <img src="main_image[1].png" style="width:100%; display:block;">
             </div>
             <div class="column">
                 <form action="/action_page.php">
-                    <label for="fname">First Name</label>
+                    <label for="fname"required>First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <label for="lname">Last Name</label>
+                    <label for="lname"required>Last Name</label>
                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <label for="Gender">Gender</label>
+                    <label for="Gender"required>Gender</label>
                     <select id="Gender" name="Gender">
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Other">Other</option>
                         <option value="Prefer Not To Say">Prefer Not To Say</option>
                     </select>
-                    <label for="Email">Email</label>
-                    <input type="text" id="Email" name="Email" placeholder="Your Email..">
-                    <label for="Location">Nearest Location</label>
+                    <label for="Email"required>Email</label>
+                    <input type="text" id="Email" name="Email" placeholder="Your Email.." required>
+                    <label for="Location"required>Nearest Location</label>
                     <select id="Location" name="Location">
                         <option value="L1">Bury St Edmunds</option>
                         <option value="L2">Downham Market</option>
@@ -391,7 +391,7 @@
                         <option value="L15">Spalding</option>
                         <option value="L16">None Of The Above</option>
                     </select>
-                    <label for="subject">Subject</label>
+                    <label for="subject"required>Subject</label>
                     <textarea id="subject" name="subject" placeholder="Write something.."
                         style="height:170px"></textarea>
                     <input type="submit" value="Submit">

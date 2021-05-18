@@ -302,72 +302,36 @@
         </div>
     </div>
 
-    <!--This adds content to the class coulumn-->
-    <div class="row">
-        <div class="columnleft">
-            <div class="card">
-                <tr></tr>
-                <h5><br> <br> KINGS LYNN <br>
-                    <br> TAE KWON-DO SCHOOL
-                </h5>
-                <h3>Providence Street Community Centre, Providence Street, Kings Lynn, Norfolk. PE30 5ET</h3>
-                <p> <br>
-                <h6>TUESDAY</h6><br>
-
-                <Br>6.30 to 8.00pm - Adult Beginners <br>
-
-                <br>6.30 to 8.00pm - Junior Intermediate <br>
-
-                <br>8.00 to 9.30pm - Advanced Students <br>
-
-                <br>
-                <h6>THURSDAY</h6> <br>
-
-                <br>5.45 to 6.45pm - Junior Beginners <br>
-
-                <br>7.00 to 9.00pm - Work Out Session <br>
-                Kings Lynn Tae Kwon-Do School established on 17th November 1987 </p>
-            </div>
-
-            <!--adds conent to middle column-->
-            <!-- <div class="card">
-                <h2> Internal</h2>
-                <p>Internal styles consist of the &lt;style&gt; and &lt;head&gt; tags. This is better if one web page needs to use specific code otherwise its best to use external so if i need to do any changes i only have to do it once rather than going to each page with the code.</p>
-                <div class="image">
-                    <img src="InternalExample.PNG" alr="Failed to display image">
-                </div>
-                <p> The &lt;head&gt; tag contains everything that has to be read by the browser first as it tells the browser what's ahead.</p>
-                <p>The &lt;style&gt; tag contains CSS which is applied to the content in the body of the program.</p>
-                <p>RESUB- Transitions. For my transition ive made the buttons in the content of the drop down box, look pressed when hovered over. i did this so the user know where they are hoving. How i did this was by making a pseduo element selector with code on what the buttons do when hovered over. This is useful as it makes the webpage less boring and makes it more proffesional.See below</p>
-                <div class="image">
-                    <img src="Trann.PNG"  alt="Failed to display image">
-                </div>
-             </div> -->
+    
+    <div class="container">
+        <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Swing by for a cup of coffee, or leave us a message:</p>
         </div>
-
-        <!--This Adds content to the class columnright-->
-        <div class="columnright">
-            <div class="card">
-                <h3>Instructor: Master Mark Farnham - Grade: 7th Dan</h3>
-                <div class="image">
-                    <img src="Ely_Kings_Lynn.jpg" sytle="height: 40%;" alt="Failed to display image">
-                </div>
-            </div>
-            <div class="card">
-                <h3>Follow our social media for recent events and achivements!!</h3>
-                <div class="image">
-                    <a target="_blank" href="https://twitter.com/mftkd">
-                        <img src="twitter.png" sytle=" width: 90%; float: left;" alt="Failed to display image">
-                    </a>
-                </div>
-                <div class="image">
-                    <a target="_blank" href="https://www.facebook.com/mftkd">
-                        <img src="facebook.png" sytle="width: 50%; float: right;" alt="Failed to display image">
-                    </a>
-                </div>
-            </div>
+        <div class="row">
+        <div class="column">
+            <img src="/w3images/map.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+            </form>
+        </div>
         </div>
     </div>
+    
 
 
     <div class="footer">

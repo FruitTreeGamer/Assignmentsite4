@@ -13,8 +13,8 @@
         }
 
         .header {
-            background-color: beige;
-            padding: 30px;
+            background-color: white;
+            padding: 10px;
             text-align: center;
         }
 
@@ -25,7 +25,7 @@
         /* styles the nav bar*/
         .topnav {
             overflow: hidden;
-            background-color: lightblue;
+            background-color: rgb(6, 102, 212);
         }
 
         .topnav a {
@@ -45,7 +45,7 @@
         /*The translateY repositions the button which is a transform function*/
         .topnav a:hover,
         .dropdown:hover .dropbtn:not(.active) {
-            background-color: darkkhaki;
+            background-color: rgb(90, 127, 207);
             border-top: dimgrey;
             transform: translateY(4px);
         }
@@ -57,7 +57,7 @@
         }
 
         .active {
-            background-color: #3ea841;
+            background-color: #c42f15;
             color: black;
             transform: translateY(4px);
         }
@@ -84,7 +84,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: lightgray;
+            background-color: rgb(90, 127, 207);
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px black;
             z-index: 1;
@@ -121,8 +121,7 @@
         }
 
         .image {
-            background-color: gray;
-            border: 5px solid rgb(87, 92, 87);
+            background-color: rgb(248, 247, 247);
             padding: 0px;
             max-width: fit-content;
         }
@@ -132,6 +131,13 @@
             background-color: white;
             padding: 20px;
             margin-top: 20px;
+        }
+
+
+
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
         }
 
         /* Clear floats after the columns */
@@ -148,17 +154,34 @@
             text-align: center;
         }
 
-        img {
-            width: 100%;
-            height: auto;
+        .carousel-inner>.item>a>img,
+        .carousel-inner>.item>img,
+        .img-responsive,
+        .thumbnail a>img,
+        .thumbnail>img {
             display: block;
+            max-width: 100%;
+            height: auto;
+
+        }
+
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        img {
+            display: block;
+            height: auto;
         }
 
         /* This will be used as a refereance in Keyframes because of animation name*/
         /*This gives the duration of the animation and starting point like colour*/
         nav {
             padding: 12px 16px;
-            background-color: lightblue;
+            background-color: rgb(6, 102, 212);
             position: relative;
             animation-name: example;
             animation-duration: 10s;
@@ -170,10 +193,33 @@
             font-size: 20px;
         }
 
+        tr {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: width 2s;
+
+        }
+
+        h5 {
+            color: red;
+            font: bold;
+            float: center;
+        }
+
+        h6 {
+            float: center;
+        }
+
+
+        tr:hover {
+            width: 300px;
+        }
+
         /* Keyframes specifies the animation code, here it sets what the animation will be doing*/
         @keyframes example {
             0% {
-                background-color: lightblue;
+                background-color: rgb(6, 102, 212);
                 left: 0px;
                 top: 0px;
             }
@@ -185,7 +231,7 @@
             }
 
             50% {
-                background-color: blue;
+                background-color: turquoise;
                 left: 0px;
                 top: 0px;
             }
@@ -197,7 +243,7 @@
             }
 
             100% {
-                background-color: lightblue;
+                background-color: rgb(6, 102, 212);
                 left: 0px;
                 top: 0px;
             }
@@ -225,25 +271,33 @@
 
 <body>
 
-    <!--This adds conetnt to the heder class-->
+    <!--This adds conetnt to the header class-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <a href="/" style="position: absolute;width: 100%;display: block;min-height: 158px;"></a>
+                <p>
+                    <div class="image">
+                        <img class="img-responsive" src="logo.png" style="vertical-align: middle;" alt="Failed to display image">
+                    </div>
+                </p>
 
-    <div class="header">
-        <h1>Assignment 1 Page 2</Header>
-        </h1>
-    </div>
-
+            </div>
+        </div>
+    </header>
     <div class="topnav">
         <nav></nav>
-        <a  class="active" href="#home">Home</a>
-        <a href="#Code">Code</a>
-        <a  href="index.html" style="float:right">Lets go back to page 1</a>
+        <a  href="#home">Home</a>
+        <a href="#news">Classes</a>
+        <a class= active href="Assign4P2.html">Contact Us</a>
         <div class="dropdown">
-            <button class="dropbtn">More
+            <button class="dropbtn">About
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#about">About</a>
-                <a href="#contact">Contact Info</a>
+                <a href="#about">What is Tae Kwon Do</a>
+                <a href="#classes">Tae kwon Do for adults and kids</a>
+                <a href="#SelfDefence">Tae kwon do as self defense</a>
             </div>
         </div>
     </div>
@@ -252,86 +306,64 @@
     <div class="row">
         <div class="columnleft">
             <div class="card">
-                <h2>This is a left column</h2>
-                <h3>made using divs</h3>
-                <p>            
-                /* Responsive layout */ <br>
-                /* makes the three columns stack on top of each other instead of next to each other */<br>
-                @media screen and (max-width: 800px) {<br>
-                </p>
-                <p>
-                    .columnleft,<br>
-                    .columnright {<br>
-                    width: 100%;<br>
-                    padding: 0;<br>
-                    }<br>
-                }<br>
-                </p>
+                <tr></tr>
+                <h5><br> <br> KINGS LYNN <br>
+                    <br> TAE KWON-DO SCHOOL
+                </h5>
+                <h3>Providence Street Community Centre, Providence Street, Kings Lynn, Norfolk. PE30 5ET</h3>
+                <p> <br>
+                <h6>TUESDAY</h6><br>
 
+                <Br>6.30 to 8.00pm - Adult Beginners <br>
 
-                <p><var>Responsive Layouts</var></p>
-                <p>What are responsive layouts? They are used to respond to the size of the website, so if i was to
-                    shrink the size of my website the columns dont go all over the place instead they stack. <var>Try
-                        it</var>. </p>
-                <p>In my example the responsive layout will start to happen when the webpage is lower than 800px. The
-                    width is set to make sure my columns still take up the page rather than staying the same size and
-                    being too big.</p>
+                <br>6.30 to 8.00pm - Junior Intermediate <br>
+
+                <br>8.00 to 9.30pm - Advanced Students <br>
+
+                <br>
+                <h6>THURSDAY</h6> <br>
+
+                <br>5.45 to 6.45pm - Junior Beginners <br>
+
+                <br>7.00 to 9.00pm - Work Out Session <br>
+                Kings Lynn Tae Kwon-Do School established on 17th November 1987 </p>
             </div>
-            
 
             <!--adds conent to middle column-->
-            <div class="card">
-                <h2> CSS Box Model</h2>
-                <li>The main conent (middle) is where the text and images appear.</li>
-                <li> The Paddiing clears an area around the main content.</li>
-                <li> The border is around the padding and main content. </li>
-                <li>The Margin is empty space around the border which has no colour.</li>
+            <!-- <div class="card">
+                <h2> Internal</h2>
+                <p>Internal styles consist of the &lt;style&gt; and &lt;head&gt; tags. This is better if one web page needs to use specific code otherwise its best to use external so if i need to do any changes i only have to do it once rather than going to each page with the code.</p>
                 <div class="image">
-                    <img src="css_box_model_chrome.png" alt="Failed to display image">
+                    <img src="InternalExample.PNG" alr="Failed to display image">
                 </div>
-                <p>This is used to make sure the content fits on the page and so that the content on the page is seperated.</p>
-                <p>image from https://www.vikingcodeschool.com/html5-and-css3/the-css-box-model</p>
-                <p>RESUB- on my site this is used with each column, so the main content is inside the box and the padding divides each box so they don't overlap.</p>
-            </div>
+                <p> The &lt;head&gt; tag contains everything that has to be read by the browser first as it tells the browser what's ahead.</p>
+                <p>The &lt;style&gt; tag contains CSS which is applied to the content in the body of the program.</p>
+                <p>RESUB- Transitions. For my transition ive made the buttons in the content of the drop down box, look pressed when hovered over. i did this so the user know where they are hoving. How i did this was by making a pseduo element selector with code on what the buttons do when hovered over. This is useful as it makes the webpage less boring and makes it more proffesional.See below</p>
+                <div class="image">
+                    <img src="Trann.PNG"  alt="Failed to display image">
+                </div>
+             </div> -->
         </div>
 
         <!--This Adds content to the class columnright-->
         <div class="columnright">
             <div class="card">
-               <h3>This is The right column</h3>
+                <h3>Instructor: Master Mark Farnham - Grade: 7th Dan</h3>
                 <div class="image">
-                    <img src="card.PNG" alt="Failed to display image">
-                </div>
-                <var>
-                    <p>What i used .card for</p>
-                </var>
-                <p><b>.card</b> gives the website the effect of a card for the background of each column. To
-                    implement this into this column i simply put the card class inside the columnright class.</p>
-                <p>RESUB- CSS Selectors, there are 5 different types of selectors. simple which selects elements bases on name,id and class. Combinator which select elements based on relationships between then. Pseudi-class which select elements based on a certain state, Pseudo elements which select and style part of an elemtn and an attribute selector which selects elements baseed on an attribute or attribute value</p>
-                <p>Credit to w3schools: https://www.w3schools.com/CSS/css_selectors.asp </p>
-            </div>
-
-
-            <!--If the images are clicked on it opens a new tab displaying them, alt is a failsafe for if the image doesnt show for whatever reason-->
-            <div class="card">
-                <h3><var>card</var></h3>
-                <div class="image">
-                    <a target="_blank" href="Capture.PNG">
-                        <img src="Capture.PNG" style="height: 15%; " alt="Failed to display image">
-                    </a>
-                </div><br>
-                <!--<a> is used as a hyperlink to link to the image -->
-                <div class="image">
-                    <a target="_blank" href="ImageClick2.PNG">
-                        <img src="ImageClick2.PNG" style="height: 15%;" alt="Failed to display image">
-                    </a>
+                    <img src="Ely_Kings_Lynn.jpg" sytle="height: 40%;" alt="Failed to display image">
                 </div>
             </div>
             <div class="card">
-                <h3>Navigation bar</h3> 
-                <p>The navigation bar is used to guide the user around my web page. in this example its used to guide the user back to page 1 using an external style</p>
+                <h3>Follow our social media for recent events and achivements!!</h3>
                 <div class="image">
-                    <img src="navExample.PNG" alt="Failed to display image">
+                    <a target="_blank" href="https://twitter.com/mftkd">
+                        <img src="twitter.png" sytle=" width: 90%; float: left;" alt="Failed to display image">
+                    </a>
+                </div>
+                <div class="image">
+                    <a target="_blank" href="https://www.facebook.com/mftkd">
+                        <img src="facebook.png" sytle="width: 50%; float: right;" alt="Failed to display image">
+                    </a>
                 </div>
             </div>
         </div>
@@ -339,7 +371,7 @@
 
 
     <div class="footer">
-        <p>This is my footer </p>
+        <p>This is a footer</p>
     </div>
 
 

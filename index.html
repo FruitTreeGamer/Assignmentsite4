@@ -173,6 +173,7 @@
         }
 
         img {
+            display: block;
             height: auto;
         }
 
@@ -270,28 +271,24 @@
 
 <body>
 
+    <!--This adds conetnt to the header class-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <a href="/" style="position: absolute;width: 100%;display: block;min-height: 158px;"></a>
+                <p>
+                    <div class="image">
+                        <img class="img-responsive" src="logo.png" style="vertical-align: middle;" alt="Failed to display image">
+                    </div>
+                </p>
 
-    <!--This adds content to the header class-->
-    <center>
-        <header>
-            <div class="container">
-                <div class="row">
-                    <a href="/" style="position: absolute;width: 100%;display: block;min-height: 158px;"></a>
-                    <p>
-                        <div class="image">
-                            <img class="img-responsive" src="logo.png" style="vertical-align: middle;"
-                                alt="Failed to display image">
-                        </div>
-                    </p>
-                </div>
             </div>
-            </div>
-        </header>
-    </center>
+        </div>
+    </header>
     <div class="topnav">
         <nav></nav>
-        <a class="active" href="index.html">Home</a>
-        <a href="class.html">Classes</a>
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Classes</a>
         <a href="Assign4P2.html">Contact Us</a>
         <div class="dropdown">
             <button class="dropbtn">About
@@ -303,7 +300,6 @@
                 <a href="#SelfDefence">Tae kwon do as self defense</a>
             </div>
         </div>
-        <a href="LoginPage.html" style="float:right;color:red;">Login/Sign Up</a>
     </div>
 
     <!--This adds content to the class coulumn-->
@@ -311,37 +307,29 @@
         <div class="columnleft">
             <div class="card">
                 <tr></tr>
-                <div style="text-align:center;">
-                    <div style="text-align:center; font-size: 30px">
-                        <h5> <br> KINGS LYNN <br>
-                            <br> TAE KWON-DO SCHOOL
-                        </h5>
-                    </div>
+                <h5><br> <br> KINGS LYNN <br>
+                    <br> TAE KWON-DO SCHOOL
+                </h5>
+                <h3>Providence Street Community Centre, Providence Street, Kings Lynn, Norfolk. PE30 5ET</h3>
+                <p> <br>
+                <h6>TUESDAY</h6><br>
 
-                    <h3>Providence Street Community Centre, Providence Street, Kings Lynn, Norfolk. PE30 5ET</h3>
-                    <p> <br>
-                        <h6>TUESDAY</h6><br>
+                <Br>6.30 to 8.00pm - Adult Beginners <br>
 
-                        <Br>6.30 to 8.00pm - Adult Beginners <br>
+                <br>6.30 to 8.00pm - Junior Intermediate <br>
 
-                        <br>6.30 to 8.00pm - Junior Intermediate <br>
+                <br>8.00 to 9.30pm - Advanced Students <br>
 
-                        <br>8.00 to 9.30pm - Advanced Students <br>
+                <br>
+                <h6>THURSDAY</h6> <br>
 
-                        <br>
-                        <h6>THURSDAY</h6> <br>
+                <br>5.45 to 6.45pm - Junior Beginners <br>
 
-                        <br>5.45 to 6.45pm - Junior Beginners <br>
-
-                        <br>7.00 to 9.00pm - Work Out Session <br>
-
-                        <br> Kings Lynn Tae Kwon-Do School established on 17th November 1987
-                    </p>
-
-                </div>
-
+                <br>7.00 to 9.00pm - Work Out Session <br>
+                Kings Lynn Tae Kwon-Do School established on 17th November 1987 </p>
             </div>
 
+            
         </div>
 
         <!--This Adds content to the class columnright-->
@@ -353,26 +341,24 @@
                 </div>
             </div>
             <div class="card">
-                <h5>Safety First!</h5>
-                <p>Tae Kwon-Do, like any other sport, can be practised in complete safety if simple precautions are
-                    followed. At all T.A.G.B. schools we stress safety from the day you begin - through careful
-                    stretching, controlled techniques, and a positive attitude.</p>
+                <h3>Follow our social media for recent events and achivements!!</h3>
+                <div class="image">
+                    <a target="_blank" href="https://twitter.com/mftkd">
+                        <img src="twitter.png" sytle=" width: 90%; float: left;" alt="Failed to display image">
+                    </a>
+                </div>
+                <div class="image">
+                    <a target="_blank" href="https://www.facebook.com/mftkd">
+                        <img src="facebook.png" sytle="width: 50%; float: right;" alt="Failed to display image">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
 
     <div class="footer">
-        <div class="container social">
-
-
-            <div class="custom">
-                <p class="text-center"><a href="https://twitter.com/mftkd" target="_blank"><img alt=""
-                            src="twitter.png"></a><a href="https://www.facebook.com/mftkd" target="_blank"><img alt=""
-                            src="facebook.png"></a></p>
-            </div>
-
-        </div>
+        <p>This is a footer</p>
     </div>
 
 
